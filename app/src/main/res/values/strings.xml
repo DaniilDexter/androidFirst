@@ -11,5 +11,7 @@
     <string name="bor">Борода</string>
     <string name="color">Покраска</string>
     <string name="app_name">FirstApp</string>
-
+    <string name="LogoDescription">Pride logo</string>
+    <string name="emailIcon">Email icon</string>
+    <string name="lockIcon">Lock icon</string>
 </resources>
