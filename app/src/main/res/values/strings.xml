@@ -1,10 +1,12 @@
 <resources>
     <string name="h1">Войти в аккаунт</string>
-    <string name="email">Email</string>
-    <string name="password">Password</string>
+    <string name="email">ФИО</string>
+    <string name="password">+7(999)–999–99–99</string>
     <string name="lisence">Я принимаю условия пользовательского соглашения</string>
     <string name="enter">Войти</string>
-    <string name="exit">Выйти</string>
+    <string name="phone">Позвонить</string>
+    <string name="telephone">Наберите номер для вызова через приложение</string>
+    <string name="exit">Вернуться</string>
     <string name="description">Доступные услуги</string>
     <string name="sucsess">Вы успешно вошли!</string>
     <string name="str">Стрижка</string>

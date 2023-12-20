@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="230dp"
         android:adjustViewBounds="true"
         android:src="@drawable/_659891907160086354"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,63 +33,68 @@
 
     <EditText
         android:id="@+id/email"
-        android:layout_width="250dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
         android:background="@drawable/edit_background"
         android:hint="@string/email"
-        android:minHeight="48dp"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
         android:padding="5dp"
         android:paddingStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/h1"/>
+        app:layout_constraintStart_toEndOf="@+id/mail"
+        app:layout_constraintTop_toBottomOf="@+id/h1" />
 
     <ImageView
         android:id="@+id/mail"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:src="@drawable/baseline_email_24"
+        android:src="@drawable/baseline_person_4_24"
         app:layout_constraintBottom_toBottomOf="@+id/email"
         android:layout_marginStart="20dp"
         android:contentDescription="@string/emailIcon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/email" />
 
+    <TextView
+        android:id="@+id/telephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/telephone"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit" />
+
     <EditText
         android:id="@+id/password"
-        android:layout_width="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
         android:background="@drawable/edit_background"
         android:hint="@string/password"
-        android:inputType="textPassword"
+        android:inputType="number"
         android:minHeight="48dp"
         android:padding="5dp"
         android:paddingStart="20dp"
         app:layout_constraintEnd_toEndOf="@+id/email"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintStart_toEndOf="@+id/lock"
+        app:layout_constraintTop_toBottomOf="@+id/telephone" />
 
     <ImageView
         android:id="@+id/lock"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:contentDescription="@string/lockIcon"
-        android:src="@drawable/baseline_lock_24"
+        android:src="@drawable/baseline_phone_24"
         app:layout_constraintStart_toStartOf="@+id/mail"
         app:layout_constraintTop_toTopOf="@+id/password" />
-
-    <CheckBox
-        android:id="@+id/lisence"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/lisence"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/password" />
 
     <Button
         android:id="@+id/submit"
@@ -98,66 +103,23 @@
         android:layout_marginBottom="40dp"
         android:background="@drawable/edit_background"
         android:text="@string/enter"
+        android:layout_marginTop="20dp"
         android:textColor="#fff"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
-    <TextView
-        android:id="@+id/description"
+    <Button
+        android:id="@+id/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/description"
-        android:textSize="24sp"
-        android:visibility="gone"
-        android:layout_marginTop="30dp"
+        android:background="@drawable/edit_background"
+        android:text="@string/phone"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enter" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
-    <TextView
-        android:id="@+id/enter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sucsess"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:visibility="gone"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
-
-
-    <LinearLayout
-        android:id="@+id/services"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:text="@string/str" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:text="@string/bor" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/color" />
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
