@@ -15,7 +15,7 @@ class SecondActivity : AppCompatActivity()  {
         val submit: Button = findViewById(R.id.retur)
         ret = findViewById(R.id.new_text)
 
-        ret.text = intent.getStringExtra("FIO")
+        ret.text = intent.getStringExtra(FIO)
 
         submit.setOnClickListener {
             startFirst()
@@ -31,8 +31,6 @@ class SecondActivity : AppCompatActivity()  {
         super.onRestoreInstanceState(savedInstanceState)
         val saved = savedInstanceState.getString(SAVED_STRING)
         ret.text = saved
-
-        println("Restore First")
     }
 
     private fun startFirst() {
@@ -43,5 +41,6 @@ class SecondActivity : AppCompatActivity()  {
 
     companion object {
         private const val SAVED_STRING = "SAVED_STRING"
+        private const val FIO = "FIO"
     }
 }

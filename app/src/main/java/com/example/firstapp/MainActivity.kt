@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun startSecond() {
         intent = Intent(this, SecondActivity::class.java)
-        intent.putExtra("FIO", fio.text.toString())
+        intent.putExtra(FIO, fio.text.toString())
         startActivity(intent)
     }
 
@@ -39,6 +39,9 @@ class MainActivity : AppCompatActivity() {
             data = Uri.parse("tel:" + iphone.text.toString())
         }
         startActivity(intent)
+    }
+    companion object {
+        private const val FIO = "FIO"
     }
 
 }
